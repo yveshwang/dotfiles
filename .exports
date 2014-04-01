@@ -8,3 +8,11 @@ export ANT_OPTS="-Xms512m -Xmx1024m"
 
 export PKG_CONFIG_PATH=/usr/local/Library/ENV/pkgconfig/mountain_lion/
 
+# from docker.io installation guide
+# http://docs.docker.io/en/latest/installation/mac/
+# and a blog
+# http://zaiste.net/2014/02/lightweight_docker_experience_on_osx/
+
+# Set the environment variable for the docker daemon
+export DOCKER_HOST=tcp://127.0.0.1:4243
+
