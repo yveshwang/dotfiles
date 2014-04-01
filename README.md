@@ -12,3 +12,10 @@ In addition, .extra was added to provide the update-java-alternative function fo
 Getting started
 ---------------
 Copy all the files into your home directory and voila! Make sure they are configured to your liking.
+
+Vagrant
+-------
+useful plug ins:
+
+* http://kvz.io/blog/2013/01/16/vagrant-tip-keep-virtualbox-guest-additions-in-sync/
+
