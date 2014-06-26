@@ -1,3 +1,5 @@
+export PATH='/usr/local/bin:$PATH'
+
 # Setting for the new UTF-8 terminal support in Lion
 
 # dont forget to set the homebrew github api token
