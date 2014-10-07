@@ -19,3 +19,7 @@ useful plug ins:
 
 * http://kvz.io/blog/2013/01/16/vagrant-tip-keep-virtualbox-guest-additions-in-sync/
 
+Windows
+-------
+Use Babun for shell. Not 100% but solid enough.
+If sitting behind corporate network or proxies, source the bin/proxy.conf upon starting Babun.
