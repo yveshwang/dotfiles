@@ -21,10 +21,11 @@ Getting started
 
 Vagrant
 -------
-useful plug ins:
+useful plugins:
 
 * http://kvz.io/blog/2013/01/16/vagrant-tip-keep-virtualbox-guest-additions-in-sync/
 
+* https://github.com/tmatilai/vagrant-proxyconf
 Windows
 -------
 Use Babun for shell. Not 100% but solid enough.
