@@ -1,6 +1,6 @@
 dotfiles
 ========
-Yves Hwang, 01.04.2014
+Yves Hwang, 21.03.2015
 
 my personal dotfiles, completely based on
 
@@ -8,10 +8,16 @@ https://github.com/mathiasbynens/dotfiles/ and https://github.com/paulirish/dotf
 
 In addition, .extra was added to provide the update-java-alternative function for OSX Maverick, and a prettier git log. 
 
+Check out http://blog.bmannconsulting.com/mavericks-brew-cask for a bit of writing on whats needed to get going. Works for Yosemite too.
 
 Getting started
 ---------------
-Copy all the files into your home directory and voila! Make sure they are configured to your liking.
+
+* Install Homebrew, see http://brew.sh/
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+* Optional (Xcode and commandline interface tool)
+    http://blog.bmannconsulting.com/mavericks-brew-cask
+* Copy all the files into your home directory and voila! Make sure they are configured to your liking.
 
 Vagrant
 -------
