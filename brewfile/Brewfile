@@ -10,6 +10,7 @@ brew 'ruby-build'
 brew 'boot2docker'
 brew 'docker'
 brew 'jenv'
+brew 'pyenv'
 
 cask 'java'
 cask 'virtualbox'

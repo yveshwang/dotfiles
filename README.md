@@ -70,6 +70,10 @@ and whatever caveat it pops up with brew. For older jdk, download the dmg and in
 
 For Eclipse theme, checkout http://guari.github.io/eclipse-ui-theme/
 
+Python
+------
+OSX generally ships with some kind of python. Brew installing python might conflict with the version supported by OSX. Using pyenv is an elegant way to pick and choose which Python version you wish to use. Just remember to do the following.
+
 Vagrant
 -------
 useful plugins:
