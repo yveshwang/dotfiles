@@ -37,7 +37,16 @@ This thing is pretty sweet. Go
 
     $ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
-mh is a pretty sweet theme.
+mh is a pretty sweet theme, but for powerline, one could roll with agnoster which uses powerline.
+
+Powerline
+---------
+Powerline is a bit annoying to get installed it seems. Bit of fiddling around with prepatched fonts. see https://github.com/powerline/fonts and https://github.com/bhilburn/powerlevel9k
+
+Note that if you only want your username shown on remote hosts, add this into .zshrc
+
+    [[ -n "$SSH_CLIENT" ]] || export DEFAULT_USER="my_username"
+
 
 Ruby
 ----
@@ -73,6 +82,12 @@ For Eclipse theme, checkout http://guari.github.io/eclipse-ui-theme/
 Python
 ------
 OSX generally ships with some kind of python. Brew installing python might conflict with the version supported by OSX. Using pyenv is an elegant way to pick and choose which Python version you wish to use. Just remember to do the following.
+
+Migh run into some problems with zlib and other strange install errors when using pyenv install. Checkout https://github.com/yyuu/pyenv/wiki/Common-build-problems
+
+For example this might help: 
+
+    CFLAGS="-I$(xcrun --show-sdk-path)/usr/include" pyenv install 2.7.9
 
 Vagrant
 -------
