@@ -97,6 +97,8 @@ useful plugins:
 
 * https://github.com/tmatilai/vagrant-proxyconf
 
+* https://github.com/dergachev/vagrant-vbox-snapshot vagrant plugin install vagrant-vbox-snapshot
+
 Themes
 ------
 Using Solarized - http://ethanschoonover.com/solarized
