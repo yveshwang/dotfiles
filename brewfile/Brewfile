@@ -1,5 +1,9 @@
 # Install Cask
-brew  'caskroom/cask/brew-cask'
+brew 'caskroom/cask/brew-cask'
+
+# install taps
+tap 'homebrew/services'
+tap 'homebrew/versions'
 
 brew 'macvim'
 brew 'wget'
