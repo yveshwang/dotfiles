@@ -89,7 +89,7 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "N", function()
 end)
 
 -- get cord and size of window
-hs.hotkey.bind({"alt"}, "+", function()
+hs.hotkey.bind({"alt"}, "=", function()
   local win = hs.window.focusedWindow()
   local f = win:frame()
   local screen = win:screen()
