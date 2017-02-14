@@ -31,6 +31,24 @@ For older versions of things, this might help.
 
     $ brew tap homebrew/versions
 
+gpg, docker, pinentry & work arounds
+------------------------------------
+Docker with file system sharing (recent Linux or OSX via osxfs should do)
+Working ssh-agent with your github.com SSH key cached.
+
+Use of gnupg2 (v2.1.1 or later) on your local machine. Try symlinking /usr/bin/gpg2 to /usr/local/bin/gpg if your distribution still defaults to gnupg v1.
+Working gpg-agent (v2.1.1 or later) and appropriate pinentry program for your desktop environment (pinentry-qt, pinentry-gtk2, pinentry-curses, pinentry-mac) with your GPG key.
+
+On OSX, due to lack of UNIX socket sharing ssh-agent and gpg-agent sockets need to forwarded over TCP. It is implemented via socat on both sides with traffic being TLSv1.2 encrypted using randomly generated CA with mutual authenticated on both sites. Therefore it is pretty safe to expose those TCP ports even on host public interfaces or you may add an alias IP address to lo0 interface (e.g. 172.16.123.1) to keep traffic local as a workaroud. Then execute
+
+- https://github.com/docker/for-mac/issues/483
+- https://forums.docker.com/t/access-host-not-vm-from-inside-container/11747/10
+
+Basically do this:
+
+    ifconfig lo0 alias 172.16.123.1
+
+
 Oh-my-zsh
 ---------
 This thing is pretty sweet. Go
