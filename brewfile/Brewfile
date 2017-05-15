@@ -36,4 +36,7 @@ cask 'hammerspoon'
 cask 'slack'
 # docker cask, for docker for mac, includes docker-compose, docker-machine and client.
 cask 'docker'
- 
+cask 'atom'
+cask 'intellij-idea-ce'
+# sad but true xD
+cask 'microsoft-lync' 
