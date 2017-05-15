@@ -1,6 +1,6 @@
 dotfiles
 ========
-Yves Hwang, 13.05.2015
+Yves Hwang, 12.05.2017
 
 my personal dotfiles, completely based on
 
@@ -14,8 +14,7 @@ Getting started
 ---------------
 
 * Install Homebrew, see http://brew.sh/
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-* Optional (Xcode and commandline interface tool)
+* [Optional] Xcode and commandline interface tool - this may also be done automatically after installing brew.
     http://blog.bmannconsulting.com/mavericks-brew-cask
 * Copy all the files into your home directory and voila! Make sure they are configured to your liking.
 
@@ -23,11 +22,11 @@ Homebrew
 --------
 After the kerfuffle with XCode, install the cask, and tap into bundle
 
-    $ brew install caskroom/cask/brew-cask
+    $ brew tap caskroom/cask
     $ brew tap homebrew/bundle
     $ brew bundle  # inside the brewfile folder
 
-For older versions of things, this might help.
+For older versions of things, this might help. Note that this was deprecated as all formulae were migrated.
 
     $ brew tap homebrew/versions
 
