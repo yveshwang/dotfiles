@@ -1,6 +1,6 @@
 dotfiles
 ========
-Yves Hwang, 12.05.2017
+Yves Hwang, 13.10.2017
 
 my personal dotfiles, completely based on
 
@@ -47,6 +47,9 @@ Basically do this:
 
     ifconfig lo0 alias 172.16.123.1
 
+Using SSH with GPG
+------------------
+See https://ryanlue.com/posts/2017-06-29-gpg-for-ssh-auth
 
 Oh-my-zsh
 ---------
