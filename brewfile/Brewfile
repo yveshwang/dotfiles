@@ -39,5 +39,5 @@ cask 'docker'
 cask 'atom'
 cask 'intellij-idea-ce'
 # sad but true xD
-cask 'microsoft-lync'
 cask 'tunnelblick'
+cask 'skype-for-business'
