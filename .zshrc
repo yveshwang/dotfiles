@@ -9,10 +9,24 @@ export ZSH=/Users/yveshwang/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel9k/powerlevel9k"
 DEFAULT_USER=`whoami`
+
+# aws-tool custom_command
+zsh_aws_tools() {
+  local aws_profile="$AWS_ENV"
+
+  if [[ -n "$aws_profile" ]]; then
+  	# "$1_prompt_segment" "$0" "$2" red white "$aws_profile" 'AWS_ICON'
+	echo -n "$aws_profile $(print_icon AWS_ICON)"
+  fi
+}
+POWERLEVEL9K_CUSTOM_AWS_TOOLS="zsh_aws_tools"
+POWERLEVEL9K_CUSTOM_AWS_TOOLS_BACKGROUND="red"
+POWERLEVEL9K_CUSTOM_AWS_TOOLS_FOREGROUND="white"
+
 POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status aws aws_eb_env pyenv nvm node_version)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status custom_aws_tools aws_eb_env pyenv nvm node_version)
 
 POWERLEVEL9K_OS_ICON_BACKGROUND="white"
 POWERLEVEL9K_OS_ICON_FOREGROUND="blue"
@@ -134,7 +148,6 @@ source $AWSTOOLS_BIN/aws_tools_completion.bash
 PATH="$AWSTOOLS_BIN:$PATH"
 function awsenv() {
     __aws_env_update -x -a -e $1
-    export AWS_DEFAULT_PROFILE=$AWS_ENV
 }
 function awsroll() {
     __aws_roll_keys -a -s <youremail@domain.com> -i <groupemail@domain.com> -e "${1:-all}"
