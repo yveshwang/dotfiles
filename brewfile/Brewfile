@@ -1,7 +1,6 @@
 # last updated: 12.05.2017
 
 # install taps
-tap 'homebrew/services'
 tap 'homebrew/versions'
 tap 'caskroom/fonts'
 
@@ -14,7 +13,6 @@ brew 'wget'
 brew 'nvm'
 brew 'rbenv'
 brew 'docker'
-brew 'jenv'
 brew 'pyenv'
 brew 'socat'
 brew 'gpg2'
@@ -23,14 +21,14 @@ brew 'pinentry-mac'
 brew 'pass'
 
 cask 'iterm2'
-cask 'java'
-cask 'virtualbox'
+# need to open up for oracle installs. do manually
+# cask 'virtualbox'
 cask 'vagrant'
 cask 'google-chrome'
 cask 'firefox'
 cask 'spotify'
 cask 'skype'
-cask 'google-drive'
+cask 'google-backup-and-sync'
 cask 'dropbox'
 cask 'hammerspoon'
 cask 'slack'
