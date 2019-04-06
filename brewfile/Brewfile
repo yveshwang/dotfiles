@@ -39,3 +39,5 @@ cask 'intellij-idea-ce'
 # sad but true xD
 cask 'tunnelblick'
 cask 'skype-for-business'
+cask 'font-hack-nerd-font'
+cask 'visual-studio-code'
