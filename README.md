@@ -1,6 +1,6 @@
 dotfiles
 ========
-Yves Hwang, 13.10.2017
+Yves Hwang, 02.09.2024
 
 my personal dotfiles, completely based on
 
@@ -9,6 +9,10 @@ https://github.com/mathiasbynens/dotfiles/ and https://github.com/paulirish/dotf
 In addition, .extra was added to provide the update-java-alternative function for OSX Maverick, and a prettier git log. 
 
 Check out http://blog.bmannconsulting.com/mavericks-brew-cask for a bit of writing on whats needed to get going. Works for Yosemite too.
+
+vscode support
+--------------
+Copy `settings.json` to `~/Application Support/Code/User` and reload vscode. Do this after powerline10k is installed.
 
 Getting started
 ---------------
@@ -61,11 +65,11 @@ mh is a pretty sweet theme, but for powerline, one could roll with agnoster whic
 
 Powerline
 ---------
-Powerline is a bit annoying to get installed it seems. Bit of fiddling around with prepatched fonts. see https://github.com/powerline/fonts and https://github.com/bhilburn/powerlevel9k
+Powerline10k is pretty sweet and makes installation much easier now. Follow the instruction to install the theme for oh-my-zsh and also configure the right font on iterm2. Once the font is installed, you can also use the same look and feel in vscode. 
 
-Note that if you only want your username shown on remote hosts, add this into .zshrc
-
-    [[ -n "$SSH_CLIENT" ]] || export DEFAULT_USER="my_username"
+Autocomplete
+------------
+For autocomplete in zsh to work, see https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh
 
 
 Ruby
