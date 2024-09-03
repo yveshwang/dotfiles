@@ -57,7 +57,7 @@ See https://ryanlue.com/posts/2017-06-29-gpg-for-ssh-auth
 
 Oh-my-zsh
 ---------
-This thing is pretty sweet. Go
+This thing is pretty sweet. Check website https://ohmyz.sh/ or Go
 
     $ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
