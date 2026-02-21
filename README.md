@@ -1,6 +1,6 @@
 dotfiles
 ========
-Yves Hwang, 02.09.2024
+Yves Hwang, 21.02.2026
 
 my personal dotfiles, completely based on
 
@@ -9,6 +9,24 @@ https://github.com/mathiasbynens/dotfiles/ and https://github.com/paulirish/dotf
 In addition, .extra was added to provide the update-java-alternative function for OSX Maverick, and a prettier git log. 
 
 Check out http://blog.bmannconsulting.com/mavericks-brew-cask for a bit of writing on whats needed to get going. Works for Yosemite too.
+
+kiro support
+------------
+At the time of the writing, there was a bug with Kiro that stops the terminal output from working correctly if the one uses `zsh` + `oh-my-zsh` + `p10k` theme. This setup is entirely that theme. 
+
+So a little prompt to kiro should fix this quite nicely.
+
+```
+In my ~/.zshrc, I use oh-my-zsh and PowerLevel10k. I want to skip loading them when TERM_PROGRAM is set to "kiro". Wrap the following section in if [[ "$TERM_PROGRAM != "kiro" ]] guards: 
+
+1. the PowerLevel10k instant prompt block. 
+2. The ZSH_THEME= assignment. 
+3. The plugins=() and source $ZSH/oh-my-zsh.sh lines - and add an else branch with autoload -Uz compinit && compinit so that compdef is still available. 
+4. the source line for the powerlevel10k theme. 
+5. the p10k config source line (~/.p10k.zsh)
+
+Naturally, please back up my .zshrc first!!!!
+```
 
 vscode support
 --------------
