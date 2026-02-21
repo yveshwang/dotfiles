@@ -14,6 +14,8 @@ kiro support
 ------------
 At the time of the writing, there was a bug with Kiro that stops the terminal output from working correctly if the one uses `zsh` + `oh-my-zsh` + `p10k` theme. This setup is entirely that theme. 
 
+https://github.com/kirodotdev/Kiro/issues/3676
+
 So a little prompt to kiro should fix this quite nicely.
 
 ```
